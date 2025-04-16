@@ -11,7 +11,7 @@ jobs:
         with:
           toolchain: stable
           profile: minimal
-      - run: cargo install zola
+      - run: snap install --edge zola
       - run: zola build --output-dir ./public
       - uses: peaceiris/actions-gh-pages@v3
         with:
